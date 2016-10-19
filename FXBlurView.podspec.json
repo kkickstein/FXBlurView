@@ -1,16 +1,16 @@
 {
   "name": "FXBlurView",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "license": "zlib",
   "summary": "UIView subclass that replicates the iOS 7 realtime background blur effect, but works on iOS 5 and above.",
   "authors": {
     "Nick Lockwood": "http://charcoaldesign.co.uk/"
   },
   "source": {
-    "git": "https://github.com/nicklockwood/FXBlurView.git",
-    "tag": "1.6.4"
+    "git": "https://github.com/kkickstein/FXBlurView.git",
+    "tag": "1.6.5"
   },
-  "homepage": "http://github.com/nicklockwood/FXBlurView",
+  "homepage": "http://github.com/kkickstein/FXBlurView",
   "platforms": {
     "ios": "4.3"
   },

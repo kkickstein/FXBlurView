@@ -263,13 +263,16 @@
                 if (!view.lastUpdate || nextUpdate <= 0)
                 {
                     self.updating = YES;
-                    [view updateAsynchronously:YES completion:^{
+                    //Problem with iOS 9.x & AutoLayout
+                    //Huge CPU-Load while update the underlying Views
+                    //We only need to blur them once anyway, therefore no recursion here
+                    /*[view updateAsynchronously:YES completion:^{
 
                         //render next view
                         self.updating = NO;
                         self.viewIndex = i + 1;
                         [self updateAsynchronously];
-                    }];
+                    }];*/
                     return;
                 }
                 else
